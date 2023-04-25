@@ -8,19 +8,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
+    
         <div id="sidebarDiv">
               <div id="titleDiv">
                 <img id="logo" src="football.png" alt="football logo">
                 <h1 class="title">CR7</h1>
             </div>
+            <p id="imagecredit">Image by <a href="https://unsplash.com/@neonex">Neon _ex</a></p>
         </div>
         <div id="contentDiv">
-            <div>
-                <p>Join the ultimate CR7 fans club today. Get exclusive access to news, photos, videos, contests, and connect with fellow fans from around the world. Don't wait, sign up <em>now</em> !</p>
-                <p>You <em>know</em> you want to.</p>
-                <p>Let's do this</p>
-                <form action="#" method="post">
+                <div >
+                    <p>Join the ultimate CR7 fans club today. Get exclusive access to news, photos, videos, contests, and connect with fellow fans from around the world.<br>Don't wait, sign up <em>now</em> !</p>
+                    <p></p>
+                    <p>You <em>know</em> you want to.</p>
+                </div>
+                <div>
+                    <p>Let's do this</p> 
+                    <form action="#" method="post">
                     <div>
                         <label for="firstname">FIRST NAME: </label>
                         <input type="text" name="lastname" id="firstname" required>
@@ -39,19 +43,20 @@
                     </div>
                     <div>
                         <label for="password">PASSWORD: </label>
-                        <input type="password" name="password" id="password" required>
+                        <input type="password" name="password" id="password"  required>
+                        <p class="onErrorMessage inActiveMsg">* Passwords do not match</p>
                     </div>
                     <div>
                         <label for="passwordconfirm">CONFIRM PASSWORD:</label>
-                        <input type="password" name="passwordconfirm" id="passwordconfirm" required>
+                        <input type="password" name="passwordconfirm" id="passwordconfirm"  required>
                     </div>
-                    <button type="submit">Create Account</button>
+                    <button type="submit" id="button">Create Account</button>
                 
-                </form>
-                <p>Already hava an account? <a href="#">Login</a></p>
-            </div>
+                    </form>
+                </div>
+                <p style="font-weight: normal;">Already hava an account? <a href="#">Login</a></p>
         </div>
-    </div>
     
+    <script src="script.js"></script>
 </body>
 </html>
